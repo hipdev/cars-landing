@@ -1,7 +1,7 @@
 import Chip from '@/components/design-system/chip';
 import Rating from '@/components/design-system/rating';
 import { Separator } from '@/components/ui/separator';
-import Image from 'next/image';
+import CarColourSelection from './car-colour-selection';
 
 export default function CarDetail() {
   return (
@@ -17,9 +17,14 @@ export default function CarDetail() {
         <Rating stars={5} />
       </div>
 
-      <span className='text-2xl font-medium'>$41,103</span>
+      <span className='flex items-center text-2xl font-medium'>
+        <span className='text-[22px]'>$</span>41,103
+      </span>
 
       <Separator className='my-5' />
+
+      <h4 className='font-semibold'>Colour</h4>
+      <CarColourSelection />
     </div>
   );
 }

@@ -8,9 +8,13 @@ import {
   DialogHeader,
   DialogTrigger,
 } from '@/components/ui/dialog';
-import { charging, exterior, interior, performance } from '../_lib/mock-specs';
+import { charging, exterior, interior, performance } from '../_lib/mocked-data';
 
-export default function CarAllSpecs() {
+export default function CarAllSpecs({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <>
       <Dialog>
@@ -26,25 +30,7 @@ export default function CarAllSpecs() {
           <DialogHeader>
             <h3 className='mb-4 text-4xl'>Specifications</h3>
           </DialogHeader>
-          <div className='flex justify-between gap-28'>
-            <div className='flex flex-col gap-10'>
-              <BlockList list={exterior} title='Exterior' />
-              <BlockList list={exterior} title='Another one' />
-            </div>
-
-            <div className='flex w-full flex-col gap-10'>
-              <BlockList list={interior} title='Interior' />
-              <BlockList list={interior} title='Another one' />
-            </div>
-
-            <div className='w-full'>
-              <div className='flex flex-col gap-10'>
-                <BlockList list={performance} title='Performance' />
-                <BlockList list={charging} title='Charging' />
-                <BlockList list={charging} title='Another' />
-              </div>
-            </div>
-          </div>
+          {children}
         </DialogContent>
       </Dialog>
     </>

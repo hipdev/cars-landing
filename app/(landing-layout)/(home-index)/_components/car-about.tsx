@@ -1,28 +1,5 @@
 import CarFeature from '@/components/design-system/car-feature';
-
-type VehicleDetail = {
-  label: string;
-  icon: string;
-};
-
-const vehicleDetails: VehicleDetail[] = [
-  {
-    label: 'Diesel Fuel',
-    icon: '/icons/gas.svg',
-  },
-  {
-    label: 'Automatic Transmission',
-    icon: '/icons/transmission.svg',
-  },
-  {
-    label: '11,594 Miles',
-    icon: '/icons/speed.svg',
-  },
-  {
-    label: '3.5L Displacement',
-    icon: '/icons/displacement.svg',
-  },
-];
+import { vehicleDetails } from '../_lib/mocked-data';
 
 export default function CarAbout() {
   return (

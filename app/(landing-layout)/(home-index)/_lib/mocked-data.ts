@@ -3,6 +3,17 @@ type SpecificationType = {
   value: string;
 };
 
+type VehicleDetail = {
+  label: string;
+  icon: string;
+};
+
+type VehicleColor = {
+  color: string;
+  label: string;
+  picture: string;
+};
+
 export const exterior: SpecificationType[] = [
   { feature: 'Body Style', value: 'Hatchback' },
   { feature: 'Exterior Colour', value: 'Blue' },
@@ -33,4 +44,46 @@ export const charging: SpecificationType[] = [
   { feature: 'Electric Range', value: '73 Mi.' },
   { feature: 'Battery Size', value: '24 kWh' },
   { feature: 'Cost to charge', value: '$2.50' },
+];
+
+export const vehicleDetails: VehicleDetail[] = [
+  {
+    label: 'Diesel Fuel',
+    icon: '/icons/gas.svg',
+  },
+  {
+    label: 'Automatic Transmission',
+    icon: '/icons/transmission.svg',
+  },
+  {
+    label: '11,594 Miles',
+    icon: '/icons/speed.svg',
+  },
+  {
+    label: '3.5L Displacement',
+    icon: '/icons/displacement.svg',
+  },
+];
+
+export const vehicleColors: VehicleColor[] = [
+  {
+    color: 'bg-black border-black',
+    label: 'Black',
+    picture: '/landing/black-car.png',
+  },
+  {
+    color: 'bg-red-500 border-red-500',
+    label: 'Red',
+    picture: '/landing/red-car.png',
+  },
+  {
+    color: 'bg-secondary border-secondary',
+    label: 'Blue',
+    picture: '/landing/blue-car.png',
+  },
+  {
+    color: 'bg-white border-zinc-200',
+    label: 'Silver',
+    picture: '/landing/white-car.png',
+  },
 ];

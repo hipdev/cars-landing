@@ -2,7 +2,7 @@ import BlockList from '@/components/design-system/block-list';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import CarAllSpecs from './car-all-specs';
-import { charging, exterior, interior, performance } from '../_lib/mock-specs';
+import { charging, exterior, interior, performance } from '../_lib/mocked-data';
 
 export default function CarSpecifications() {
   return (
@@ -34,8 +34,31 @@ export default function CarSpecifications() {
           </Button>
         </div>
       </div>
+
       <div className='mt-10 flex justify-center'>
-        <CarAllSpecs />
+        {/* Simulate Modal using a client wrapper with server components inside */}
+
+        <CarAllSpecs>
+          <div className='flex justify-between gap-28'>
+            <div className='flex flex-col gap-10'>
+              <BlockList list={exterior} title='Exterior' />
+              <BlockList list={exterior} title='Another one' />
+            </div>
+
+            <div className='flex w-full flex-col gap-10'>
+              <BlockList list={interior} title='Interior' />
+              <BlockList list={interior} title='Another one' />
+            </div>
+
+            <div className='w-full'>
+              <div className='flex flex-col gap-10'>
+                <BlockList list={performance} title='Performance' />
+                <BlockList list={charging} title='Charging' />
+                <BlockList list={charging} title='Another' />
+              </div>
+            </div>
+          </div>
+        </CarAllSpecs>
       </div>
     </section>
   );
