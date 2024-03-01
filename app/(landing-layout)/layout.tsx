@@ -2,6 +2,9 @@ import Logo from "@/components/design-system/logo";
 import type { Metadata } from "next";
 import { LandingNavigation } from "./_components/landing-navigation";
 import Link from "next/link";
+import SiteSelector from "./_components/site-selector";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "EVFY - Landing Page",
@@ -22,11 +25,14 @@ export default function RootLayout({
               <Logo />
               <LandingNavigation />
             </div>
-            <div>
+            <div className="flex items-center gap-2.5">
+              <SiteSelector />
               <Link
                 href="/"
-                type="button"
-                className="font-semibold hover:text-black transition-colors hover:bg-accent hover:border-black/10 border px-3 py-2 border-transparent rounded-md"
+                className={cn(
+                  buttonVariants({ variant: "ghost" }),
+                  "text-base font-semibold"
+                )}
               >
                 Log In / Sign Up
               </Link>
