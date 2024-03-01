@@ -1,9 +1,9 @@
 import * as React from "react";
 import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu";
 import { cva } from "class-variance-authority";
-import { ChevronDown } from "lucide-react";
 
 import { cn } from "@/lib/utils";
+import Triangle from "../design-system/triangle";
 
 const NavigationMenu = React.forwardRef<
   React.ElementRef<typeof NavigationMenuPrimitive.Root>,
@@ -54,16 +54,7 @@ const NavigationMenuTrigger = React.forwardRef<
     {...props}
   >
     {children}{" "}
-    {/* <ChevronDown
-      className="relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-data-[state=open]:rotate-180 fill-black"
-      aria-hidden="true"
-    /> */}
-    <div
-      className="w-0 h-0 ml-3
-  border-l-[5px] border-l-transparent
-  border-t-[5px] border-t-black
-  border-r-[5px] border-r-transparent"
-    />
+    <Triangle className="transition duration-200 group-data-[state=open]:rotate-180" />
   </NavigationMenuPrimitive.Trigger>
 ));
 NavigationMenuTrigger.displayName = NavigationMenuPrimitive.Trigger.displayName;

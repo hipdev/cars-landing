@@ -12,8 +12,8 @@ import Link from "next/link";
  * `className` prop to components to style them using CSS classes.
  */
 type Props = {
-  href?: string; // Optional href
-  className?: string; // Optional className
+  href?: string;
+  className?: string;
 };
 
 export default function Logo({ href = "/", className }: Props) {
