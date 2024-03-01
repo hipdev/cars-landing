@@ -25,6 +25,8 @@ export default function Logo({ href = '/', className }: Props) {
         width={30}
         height={30}
         className='relative top-1 h-8 w-7'
+        priority
+        draggable={false}
       />
       <Image
         src='/logo.svg'
@@ -32,6 +34,8 @@ export default function Logo({ href = '/', className }: Props) {
         width={30}
         height={30}
         className='h-5 w-28'
+        priority
+        draggable={false}
       />
     </Link>
   );
