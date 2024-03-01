@@ -7,7 +7,7 @@ import SiteSelector from './site-selector';
 
 export default function LandingHeader() {
   return (
-    <header className='bg-white px-10 py-3 xl:px-0'>
+    <header className='bg-white px-14 py-3 xl:px-0'>
       <div className='mx-auto max-w-5xl'>
         <div className='flex items-center justify-between'>
           <div className='flex items-center gap-2'>

@@ -18,6 +18,7 @@ const config = {
         '2xl': '1400px',
       },
     },
+
     extend: {
       colors: {
         'soft-gray': '#FBFCFE',
@@ -62,6 +63,16 @@ const config = {
       },
       fontFamily: {
         sans: ['graphik', ...fontFamily.sans, 'sans-serif'],
+      },
+      fontSize: {
+        '4xl': [
+          '2.125rem',
+          {
+            lineHeight: '43px',
+            letterSpacing: '0.25px',
+            fontWeight: '600',
+          },
+        ],
       },
       keyframes: {
         'accordion-down': {
