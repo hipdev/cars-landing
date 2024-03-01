@@ -2,10 +2,11 @@ import Chip from '@/components/design-system/chip';
 import Rating from '@/components/design-system/rating';
 import { Separator } from '@/components/ui/separator';
 import CarColourSelection from './car-colour-selection';
+import { Button } from '@/components/ui/button';
 
 export default function CarDetail() {
   return (
-    <div className='relative z-10 w-5/12 bg-white px-12 pb-16 pt-10'>
+    <div className='relative z-10 w-5/12 max-w-[499px] bg-white px-12 pb-16 pt-10 '>
       <Chip>NEW</Chip>
       <h3 className='mb-3 mt-2.5 text-3xl font-semibold'>2021 Tesla Model 3</h3>
       <div className='flex gap-3'>
@@ -23,8 +24,14 @@ export default function CarDetail() {
 
       <Separator className='my-5' />
 
-      <h4 className='font-semibold'>Colour</h4>
       <CarColourSelection />
+
+      <Button
+        variant={'secondary'}
+        className='text-ligh-blue mt-14 w-full py-[1.94rem] text-base font-semibold'
+      >
+        Order Now
+      </Button>
     </div>
   );
 }

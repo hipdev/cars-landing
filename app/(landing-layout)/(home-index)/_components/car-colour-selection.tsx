@@ -13,7 +13,9 @@ export default function CarColourSelection() {
   const carColor = searchParams.get('carColor') || vehicleColors[0].label;
 
   return (
-    <div className='mt-4'>
+    <>
+      <h4 className='mb-4 font-semibold'>Colour</h4>
+
       <RadioGroup
         defaultValue={carColor || ''}
         className='flex items-center justify-between'
@@ -38,11 +40,11 @@ export default function CarColourSelection() {
             />
           ))}
         </div>
-        <span className='font-semibold uppercase'>
+        <span className='font-semibold uppercase tracking-[1px]'>
           {vehicleColors.find((vehicleColor) => vehicleColor.label === carColor)
             ?.label || ''}
         </span>
       </RadioGroup>
-    </div>
+    </>
   );
 }
