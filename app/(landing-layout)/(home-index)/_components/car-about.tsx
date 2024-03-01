@@ -1,5 +1,4 @@
 import CarFeature from '@/components/design-system/car-feature';
-import Image from 'next/image';
 
 type VehicleDetail = {
   label: string;
