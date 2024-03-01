@@ -1,14 +1,14 @@
-import Logo from "@/components/design-system/logo";
-import type { Metadata } from "next";
-import { LandingNavigation } from "./_components/landing-navigation";
-import Link from "next/link";
-import SiteSelector from "./_components/site-selector";
-import { buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import Logo from '@/components/design-system/logo';
+import type { Metadata } from 'next';
+import { LandingNavigation } from './_components/landing-navigation';
+import Link from 'next/link';
+import SiteSelector from './_components/site-selector';
+import { buttonVariants } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: "EVFY - Landing Page",
-  description: "2021 Tesla Model 3",
+  title: 'EVFY - Landing Page',
+  description: '2021 Tesla Model 3',
 };
 
 export default function RootLayout({
@@ -17,21 +17,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="bg-soft-gray">
-      <header className="bg-white py-4">
-        <div className="max-w-5xl mx-auto">
-          <div className="flex justify-between items-center">
-            <div className="flex items-center gap-2">
+    <main className='bg-soft-gray'>
+      <header className='bg-white py-4'>
+        <div className='mx-auto max-w-5xl'>
+          <div className='flex items-center justify-between'>
+            <div className='flex items-center gap-2'>
               <Logo />
               <LandingNavigation />
             </div>
-            <div className="flex items-center gap-2.5">
+            <div className='flex items-center gap-2.5'>
               <SiteSelector />
               <Link
-                href="/"
+                href='/'
                 className={cn(
-                  buttonVariants({ variant: "ghost" }),
-                  "text-base font-semibold"
+                  buttonVariants({ variant: 'ghost' }),
+                  'text-base font-semibold',
                 )}
               >
                 Log In / Sign Up

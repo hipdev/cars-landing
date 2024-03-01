@@ -1,6 +1,6 @@
-import { cn } from "@/lib/utils";
-import Image from "next/image";
-import Link from "next/link";
+import { cn } from '@/lib/utils';
+import Image from 'next/image';
+import Link from 'next/link';
 
 /**
  * The type `Props` in TypeScript React consists of optional properties `href` and `className`.
@@ -16,22 +16,22 @@ type Props = {
   className?: string;
 };
 
-export default function Logo({ href = "/", className }: Props) {
+export default function Logo({ href = '/', className }: Props) {
   return (
-    <Link href={href} className={cn("flex gap-1 items-center", className)}>
+    <Link href={href} className={cn('flex items-center gap-1', className)}>
       <Image
-        src="/logo-icon.svg"
-        alt="EVFY icon"
+        src='/logo-icon.svg'
+        alt='EVFY icon'
         width={30}
         height={30}
-        className="w-7 h-8 relative top-1"
+        className='relative top-1 h-8 w-7'
       />
       <Image
-        src="/logo.svg"
-        alt="EVFY logo"
+        src='/logo.svg'
+        alt='EVFY logo'
         width={30}
         height={30}
-        className="w-28 h-5"
+        className='h-5 w-28'
       />
     </Link>
   );
