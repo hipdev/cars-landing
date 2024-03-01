@@ -16,8 +16,6 @@ import { useState } from 'react';
 import Triangle from '@/components/design-system/triangle';
 import Image from 'next/image';
 
-type Checked = DropdownMenuCheckboxItemProps['checked'];
-
 const countries = [
   {
     name: 'Singapore',
@@ -38,12 +36,6 @@ const countries = [
 ];
 
 export default function SiteSelector() {
-  //     <DropdownMenuCheckboxItem
-  //     checked={showStatusBar}
-  //     onCheckedChange={setShowStatusBar}
-  //   >
-  //     Status Bar
-  //   </DropdownMenuCheckboxItem>
   const [position, setPosition] = useState('Singapore');
 
   return (

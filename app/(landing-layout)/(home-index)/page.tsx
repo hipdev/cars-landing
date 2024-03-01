@@ -1,29 +1,5 @@
-import Image from 'next/image';
-import AboutCar from './_components/about-car';
-
-type VehicleDetail = {
-  label: string;
-  icon: string;
-};
-
-const vehicleDetails: VehicleDetail[] = [
-  {
-    label: 'Diesel Fuel',
-    icon: '/icons/gas.svg',
-  },
-  {
-    label: 'Automatic Transmission',
-    icon: '/icons/transmission.svg',
-  },
-  {
-    label: '11,594 Miles',
-    icon: '/icons/speed.svg',
-  },
-  {
-    label: '3.5L Displacement',
-    icon: '/icons/displacement.svg',
-  },
-];
+import CarAbout from './_components/car-about';
+import CarSpecifications from './_components/car-specifications';
 
 export default function Home() {
   return (
@@ -42,7 +18,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <AboutCar />
+      <CarAbout />
+      <CarSpecifications />
     </div>
   );
 }
