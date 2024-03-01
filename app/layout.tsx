@@ -1,8 +1,26 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const graphik = localFont({
+  src: [
+    {
+      path: "./_fonts/Graphik-Regular-Trial.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./_fonts/Graphik-Medium-Trial.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./_fonts/Graphik-Semibold-Trial.woff2",
+      weight: "600",
+      style: "normal",
+    },
+  ],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={graphik.className}>{children}</body>
     </html>
   );
 }
