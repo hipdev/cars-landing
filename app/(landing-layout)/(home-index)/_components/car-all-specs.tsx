@@ -1,6 +1,5 @@
 'use client';
 
-import BlockList from '@/components/design-system/block-list';
 import { Button } from '@/components/ui/button';
 import {
   Dialog,
@@ -8,7 +7,6 @@ import {
   DialogHeader,
   DialogTrigger,
 } from '@/components/ui/dialog';
-import { charging, exterior, interior, performance } from '../_lib/mocked-data';
 
 export default function CarAllSpecs({
   children,

@@ -14,7 +14,7 @@ export default function CarColourSelection() {
 
   return (
     <>
-      <h4 className='mb-4 font-semibold'>Colour</h4>
+      <h4 className='mb-5 font-semibold'>Colour</h4>
 
       <RadioGroup
         defaultValue={carColor || ''}

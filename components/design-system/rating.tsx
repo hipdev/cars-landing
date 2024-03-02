@@ -29,7 +29,7 @@ export default function Rating({
     ));
 
   return (
-    <div className={cn('mb-7 mt-6', wrapperClassName)}>
+    <div className={wrapperClassName}>
       <div className={cn('flex gap-2', starClassName)}>{starElements}</div>
     </div>
   );

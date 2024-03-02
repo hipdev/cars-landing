@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <section className='relative'>
         {/* Small trick to reprlicate the design with the white background */}
-        <div className='absolute right-0 top-0 hidden h-full w-56 bg-white xl:block' />
+        <div className='absolute right-0 top-0 hidden h-full w-56 bg-white xl:block 2xl:w-96' />
 
         <div className='mx-auto max-w-7xl'>
           <div className='flex w-full'>

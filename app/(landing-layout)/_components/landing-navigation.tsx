@@ -52,7 +52,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function LandingNavigation() {
   return (
-    <NavigationMenu>
+    <NavigationMenu className='relative z-20'>
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger className='text-base font-semibold'>
