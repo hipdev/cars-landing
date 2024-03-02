@@ -69,17 +69,17 @@ export const vehicleColors: VehicleColor[] = [
   {
     color: 'bg-black border-black',
     label: 'Black',
-    picture: '/landing/black-car.png',
+    picture: '/landing/black-car.webp',
   },
   {
     color: 'bg-red-500 border-red-500',
     label: 'Red',
-    picture: '/landing/red-car.png',
+    picture: '/landing/red-car.webp',
   },
   {
     color: 'bg-secondary border-secondary',
     label: 'Blue',
-    picture: '/landing/blue-car.png',
+    picture: '/landing/blue-car.webp',
   },
   {
     color: 'bg-white border-zinc-200',

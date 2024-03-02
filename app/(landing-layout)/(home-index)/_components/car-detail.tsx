@@ -5,10 +5,11 @@ import CarColourSelection from './car-colour-selection';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { CarDetailAccordion } from './car-detail-accordion';
+import { Suspense } from 'react';
 
 export default function CarDetail() {
   return (
-    <div className='relative z-10 w-5/12 max-w-[499px] bg-white px-12 pb-16 pt-14'>
+    <div className='relative z-10  max-w-[499px] bg-white px-12 pb-16 pt-14'>
       <Chip>NEW</Chip>
 
       <h3 className='mb-3 mt-2.5 text-3xl font-semibold'>2021 Tesla Model 3</h3>
@@ -28,8 +29,9 @@ export default function CarDetail() {
 
       <Separator className='my-5' />
 
-      <CarColourSelection />
-
+      <Suspense>
+        <CarColourSelection />
+      </Suspense>
       <Button
         variant={'secondary'}
         className='text-ligh-blue mt-16 w-full py-[1.94rem] text-base font-semibold'

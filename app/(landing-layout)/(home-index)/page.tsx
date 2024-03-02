@@ -1,4 +1,6 @@
+import { Suspense } from 'react';
 import CarAbout from './_components/car-about';
+import { CarCarousel } from './_components/car-carousel';
 import CarDetail from './_components/car-detail';
 import CarSpecifications from './_components/car-specifications';
 
@@ -11,7 +13,9 @@ export default function Home() {
 
         <div className='mx-auto max-w-7xl'>
           <div className='flex w-full'>
-            <div className='flex-1'></div>
+            <Suspense>
+              <CarCarousel />
+            </Suspense>
             <CarDetail />
           </div>
         </div>
