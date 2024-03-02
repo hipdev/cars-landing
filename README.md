@@ -28,7 +28,7 @@ I have utilized multiple Next.js 14 concepts in this demonstration, including UR
   [https://nextjs.org/docs/app/building-your-application/optimizing/fonts#local-fonts](https://nextjs.org/docs/app/building-your-application/optimizing/fonts#local-fonts)
 
 - All images have been optimized, although their appearance may seem subpar due to the low quality of the source images.
-- the project utilizes the recently supported colocation of files within private folders for improved organization:\
+- The project utilizes the recently supported colocation of files within private folders for improved organization:\
   [https://nextjs.org/docs/app/building-your-application/routing/colocation#private-folders](https://nextjs.org/docs/app/building-your-application/routing/colocation#private-folders)
 - Metadata, enriching the user experience, and they are loaded according to Next.js conventions. \
   [https://nextjs.org/docs/app/api-reference/file-conventions/metadata/app-icons#image-files-ico-jpg-png](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/app-icons#image-files-ico-jpg-png)
@@ -37,9 +37,10 @@ I have utilized multiple Next.js 14 concepts in this demonstration, including UR
 
 - For code comments, Minlify is employed in conjunction with the VSCode extension, facilitating clear and structured documentation. \
   [https://marketplace.visualstudio.com/items?itemName=minlify.document](https://marketplace.visualstudio.com/items?itemName=minlify.document)
-- The project adopts a server-first approach for components, with client wrappers enabling seamless integration. An illustrative example can be found in car-all-specs.tsx.
-- To maintain a clear separation of concerns between Shadcn and custom components, components within the ui folder are distinct from those in the design-system folder.
+- The project adopts a server-first approach for components, with client wrappers enabling seamless integration. An illustrative example can be found in **car-all-specs.tsx**.
+- To maintain a clear separation of concerns between Shadcn and custom components, components within the **ui** folder are distinct from those in the **design-system** folder.
 - Utilizing URL states in the carousel enhances both user experience and search engine optimization (SEO). Additionally, the ability to share car links ensures that the UI updates dynamically to reflect the shared content: \
   [https://cars-landing-mocha.vercel.app/?carColor=Red](https://cars-landing-mocha.vercel.app/?carColor=Red)
 - There are no errors present in the development console or build process.
 - All packages have been updated, with the project utilizing the latest stable version of Next.js as of 2024-02-29.
+- Feel free to explore the buttons, links, and elements; I've implemented some enhancements.
