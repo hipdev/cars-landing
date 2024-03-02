@@ -9,7 +9,7 @@ import { Suspense } from 'react';
 
 export default function CarDetail() {
   return (
-    <div className='relative z-10  max-w-[499px] bg-white px-12 pb-16 pt-14'>
+    <div className='relative z-10  max-w-[499px] bg-white px-8 pb-20 pt-14'>
       <Chip>NEW</Chip>
 
       <h3 className='mb-3 mt-2.5 text-3xl font-semibold'>2021 Tesla Model 3</h3>

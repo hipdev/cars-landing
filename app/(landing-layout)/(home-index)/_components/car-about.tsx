@@ -3,9 +3,9 @@ import { vehicleDetails } from '../_lib/mocked-data';
 
 export default function CarAbout() {
   return (
-    <section className='mx-auto max-w-7xl pb-28 pt-14 md:px-10'>
+    <section className='px-20 pb-28 pt-16'>
       <h3 className='mb-8 text-4xl'>About this car</h3>
-      <div className='flex justify-between'>
+      <div className='flex gap-32'>
         {vehicleDetails.map((detail) => (
           <CarFeature
             key={detail.label}

@@ -6,7 +6,7 @@ import { charging, exterior, interior, performance } from '../_lib/mocked-data';
 
 export default function CarSpecifications() {
   return (
-    <section className='mx-auto max-w-7xl pb-16 md:px-10'>
+    <section className='px-20 pb-16'>
       <h3 className='mb-8 text-4xl'>Specifications</h3>
       <div className='flex justify-between gap-28'>
         <BlockList list={exterior} title='Exterior' />
