@@ -42,7 +42,6 @@ export function CarCarousel() {
         (vehicle) => vehicle.label === carColor,
       );
       if (index !== -1) {
-        console.log(index);
         api.scrollTo(index);
       }
     }
@@ -67,6 +66,7 @@ export function CarCarousel() {
                   width={500}
                   height={500}
                   className='max-h-[387px] w-full object-contain md:h-[387px]'
+                  priority
                 />
               </div>
             </CarouselItem>

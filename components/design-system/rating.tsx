@@ -25,6 +25,7 @@ export default function Rating({
         height={24}
         src='/icons/star.svg'
         alt='star icon'
+        className='h-6 w-6'
       />
     ));
 

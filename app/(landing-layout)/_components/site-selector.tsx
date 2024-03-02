@@ -49,9 +49,9 @@ export default function SiteSelector() {
               '/icons/sg-flag.svg'
             }
             alt={`Flag of ${position}`}
-            className='h-[18px] w-7 border border-black/30 object-cover'
+            className='h-auto w-auto border border-black/30 object-cover'
             width={28}
-            height={16}
+            height={18}
           />
           <Triangle />
         </Button>

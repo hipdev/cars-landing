@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cars Landing Test
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), is running locally using Turbopack.
+
+Live preview [https://cars-landing-mocha.vercel.app/](https://cars-landing-mocha.vercel.app/) with your browser to see the result.
 
 ## Getting Started
 
@@ -16,21 +20,26 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Learn More
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+I have utilized multiple Next.js 14 concepts in this demonstration, including URL states, private folders, colocation files, route guards, custom local fonts, metadata icons, turbopack, and suspense features. The page is statically prerendered, providing efficiency and performance benefits. I believe any seasoned Next.js developer would find this implementation impressive.
 
-## Learn More
+- In the Figma mockup, Graphik fonts are employed with normal styles encompassing weights of 400, 500, and 600. These fonts are loaded via Local Fonts, as outlined in the Next.js documentation: \
+  [https://nextjs.org/docs/app/building-your-application/optimizing/fonts#local-fonts](https://nextjs.org/docs/app/building-your-application/optimizing/fonts#local-fonts)
 
-To learn more about Next.js, take a look at the following resources:
+- All images have been optimized, although their appearance may seem subpar due to the low quality of the source images.
+- the project utilizes the recently supported colocation of files within private folders for improved organization:\
+  [https://nextjs.org/docs/app/building-your-application/routing/colocation#private-folders](https://nextjs.org/docs/app/building-your-application/routing/colocation#private-folders)
+- Metadata, enriching the user experience, and they are loaded according to Next.js conventions. \
+  [https://nextjs.org/docs/app/api-reference/file-conventions/metadata/app-icons#image-files-ico-jpg-png](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/app-icons#image-files-ico-jpg-png)
+- The project adheres to consistent code formatting standards through the use of Prettier and the official Prettier plugin for TailwindCSS. The Prettier rules are aligned with those of the Vercel/commerce open-source project \
+  [https://github.com/vercel/commerce/blob/main/prettier.config.js](https://github.com/vercel/commerce/blob/main/prettier.config.js)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- For code comments, Minlify is employed in conjunction with the VSCode extension, facilitating clear and structured documentation. \
+  [https://marketplace.visualstudio.com/items?itemName=minlify.document](https://marketplace.visualstudio.com/items?itemName=minlify.document)
+- The project adopts a server-first approach for components, with client wrappers enabling seamless integration. An illustrative example can be found in car-all-specs.tsx.
+- To maintain a clear separation of concerns between Shadcn and custom components, components within the ui folder are distinct from those in the design-system folder.
+- Utilizing URL states in the carousel enhances both user experience and search engine optimization (SEO). Additionally, the ability to share car links ensures that the UI updates dynamically to reflect the shared content: \
+  [https://cars-landing-mocha.vercel.app/?carColor=Red](https://cars-landing-mocha.vercel.app/?carColor=Red)
+- There are no errors present in the development console or build process.
+- All packages have been updated, with the project utilizing the latest stable version of Next.js as of 2024-02-29.

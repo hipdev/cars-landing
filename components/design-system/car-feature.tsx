@@ -43,7 +43,7 @@ export default function CarFeature({
         alt={label}
         width={25}
         height={25}
-        className={cn('h-[25px] w-[25px]', iconClassName)}
+        className={cn('h-auto w-auto', iconClassName)}
         draggable={false}
       />
       <span className={cn('relative top-0.5 text-xl', labelClassName)}>
